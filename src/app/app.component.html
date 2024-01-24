@@ -1,11 +1,14 @@
-<div>
+<app-header></app-header>
+<app-menu></app-menu>
+<app-footer></app-footer>
 
-<h1 class="font-bold mb-2 text-center">{{title | titlecase}}</h1>
+<h2 appColory>Some text</h2>
+<app-item appColory></app-item>
 
-
-
-<app-product [product]="products[0]">
-
-</app-product>
-
-</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="" *appDelay="3">Some element text</div>
+<app-item *appDelay="3"></app-item>
