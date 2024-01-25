@@ -1,1 +1,9 @@
 <h1>Hello world</h1>
+<input type="text" #nameUser (keyup.enter)="addUser(nameUser.value);nameUser.value=''"/>
+<button (click)="addUser(nameUser.value);nameUser.value=''">Add User</button>
+<ul>
+  <li *ngFor="let user of users">
+    <app-user-card [user]="user"></app-user-card>
+    <span (click)="removeUser(user.name)">X</span>
+  </li>
+</ul>
