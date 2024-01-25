@@ -9,6 +9,7 @@ import { UserCardComponent } from './header/user-card/user-card.component';
 import { ItemComponent } from './item/item.component';
 import { ColoryDirective } from './colory.directive';
 import { DelayDirective } from './delay.directive';
+import { DinamycComponent } from './dinamyc/dinamyc.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +21,10 @@ import { DelayDirective } from './delay.directive';
     ItemComponent,
     ColoryDirective,
     DelayDirective,
+    DinamycComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
