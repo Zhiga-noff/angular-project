@@ -2,8 +2,9 @@
 <app-menu></app-menu>
 <app-footer></app-footer>
 
-<h2 appColory>Some text</h2>
-<app-item appColory></app-item>
+<h2 appColory #colory="colory">Some text</h2>
+<app-item appColory #colory2='colory'></app-item>
+<button (click)="colory.setRand0mColor(); colory2.setRand0mColor()">Change color</button>
 
 <br>
 <br>
