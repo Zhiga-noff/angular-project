@@ -1,9 +1,7 @@
 <h1>Hello world</h1>
-<input type="text" #nameUser (keyup.enter)="addUser(nameUser.value);nameUser.value=''"/>
-<button (click)="addUser(nameUser.value);nameUser.value=''">Add User</button>
-<ul>
-  <li *ngFor="let user of users">
-    <app-user-card [user]="user"></app-user-card>
-    <span (click)="removeUser(user.name)">X</span>
-  </li>
-</ul>
+<a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+<a routerLink="about" routerLinkActive="active">About</a>
+<a routerLink="users" [queryParams]="{q:34343}" routerLinkActive="active"
+   [routerLinkActiveOptions]="{exact:true}">Users</a>
+<a routerLink="users/12" routerLinkActive="active">User - 12</a>
+<router-outlet></router-outlet>
