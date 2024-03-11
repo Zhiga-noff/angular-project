@@ -7,7 +7,14 @@ import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
+  {
+    path: 'about',
+    component: AboutComponent,
+    data: {
+      title: 'About Title',
+      anotherParams: 'Something Else',
+    },
+  },
   { path: 'users', component: UsersComponent },
   { path: 'users/:userId', component: UserComponent },
 ];

@@ -1,7 +1,9 @@
 <h1>Hello world</h1>
 <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
 <a routerLink="about" routerLinkActive="active">About</a>
-<a routerLink="users" [queryParams]="{q:34343}" routerLinkActive="active"
+<a routerLink="users" routerLinkActive="active"
    [routerLinkActiveOptions]="{exact:true}">Users</a>
+<a routerLink="users" [queryParams]="{q:34343}" routerLinkActive="active"
+   [routerLinkActiveOptions]="{exact:true}">Users - params</a>
 <a routerLink="users/12" routerLinkActive="active">User - 12</a>
 <router-outlet></router-outlet>
